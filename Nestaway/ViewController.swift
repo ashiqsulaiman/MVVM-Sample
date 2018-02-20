@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tweetListTableView: UITableView!
@@ -19,11 +19,13 @@ class ViewController: UIViewController {
     var searchViewModel = SearchViewModel()
     var disposeBag = DisposeBag()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tweetListTableView.rowHeight = 100
+        populateTweetListTableView()
+        searchBar.delegate = self
         
-      //searchViewModel.addTweet()
-      populateTweetListTableView()
         
     }
     
@@ -37,20 +39,14 @@ class ViewController: UIViewController {
             cell.tweetLabel.text = element.tweet
             }
             .disposed(by: disposeBag)
-        
-        
-        
     }
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchText = searchBar.text else { return }
+        searchViewModel.searchTweet(tweet: searchText)
+        searchBar.endEditing(true)
     }
-
-
-    
-    
-    
     
 
 }

@@ -36,7 +36,7 @@ struct SearchViewModel {
     }
     
     // MARK: -  search and store tweet
-    public func addTweet() {
+    public func searchTweet(tweet: String) {
         
         let urlString =  String(describing: Network.baseURL.stringValue+"india"+Network.limit.stringValue)
         let url = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)

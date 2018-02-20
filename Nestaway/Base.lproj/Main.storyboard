@@ -41,7 +41,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2t-5c-ky2">
-                                                    <rect key="frame" x="7" y="7" width="37" height="17.5"/>
+                                                    <rect key="frame" x="7" y="7" width="361" height="17.5"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -49,6 +49,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="I2t-5c-ky2" firstAttribute="top" secondItem="rwM-HD-zRG" secondAttribute="top" constant="7" id="JBU-ei-k6S"/>
+                                                <constraint firstAttribute="trailing" secondItem="I2t-5c-ky2" secondAttribute="trailing" constant="7" id="ovr-i9-kmm"/>
                                                 <constraint firstItem="I2t-5c-ky2" firstAttribute="leading" secondItem="rwM-HD-zRG" secondAttribute="leading" constant="7" id="r1H-sl-u0U"/>
                                             </constraints>
                                         </tableViewCellContentView>
