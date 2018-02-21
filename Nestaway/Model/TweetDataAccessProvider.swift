@@ -44,10 +44,9 @@ class TweetDataAccessProvider{
     
     // MARK: - add new tweet to Core Data
     public func addTweet(withTweet tweets: Data) {
-    let newTweet = NSEntityDescription.insertNewObject(forEntityName: "Tweet", into: managedObjectContext) as! Tweet
-        
         let jsonResponse = JSON(tweets)["statuses"]
         for tweet in jsonResponse {
+            let newTweet = NSEntityDescription.insertNewObject(forEntityName: "Tweet", into: managedObjectContext) as! Tweet
             newTweet.followersCount     = tweet.1["user"]["followers_count"].stringValue
             newTweet.friendsCount       = tweet.1["user"]["friends_count"].stringValue
             newTweet.screenName         = tweet.1["user"]["screen_name"].stringValue
