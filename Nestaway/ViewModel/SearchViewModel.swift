@@ -48,24 +48,6 @@ struct SearchViewModel {
             guard let data = response.data else {return}
             self.tweetDataAccessProvider.addTweet(withTweet: data)
         }
-        
-        
-        
-        
     }
-    
 
-    
-    
-    
-    
-//    // MARK: - toggle selected todo's isCompleted value
-//    public func toggleTodoIsCompleted(withIndex index: Int) {
-//        tweetDataAccessProvider.toggleTodoIsCompleted(withIndex: index)
-//    }
-//
-//    // MARK: - remove specified todo from Core Data
-//    public func removeTodo(withIndex index: Int) {
-//        tweetDataAccessProvider.removeTodo(withIndex: index)
-//    }
 }

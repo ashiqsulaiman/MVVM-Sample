@@ -13,13 +13,13 @@ import SwiftyJSON
 
 class TweetDataAccessProvider{
     private var tweetsFromCoreData = Variable<[Tweet]>([])
+    private var userInfo = Variable<[Tweet]>([])
     private var managedObjectContext : NSManagedObjectContext
     
     init() {
         let delegate = UIApplication.shared.delegate as! AppDelegate
         tweetsFromCoreData.value = [Tweet]()
         managedObjectContext = delegate.persistentContainer.viewContext
-        
         tweetsFromCoreData.value = fetchData()
     }
     
@@ -66,29 +66,4 @@ class TweetDataAccessProvider{
         
         
     }
-    
-//    // MARK: - toggle selected todo's isCompleted value
-//    public func toggleTodoIsCompleted(withIndex index: Int) {
-//        todosFromCoreData.value[index].isCompleted = !todosFromCoreData.value[index].isCompleted
-//
-//        do {
-//            try managedObjectContext.save()
-//            todosFromCoreData.value = fetchData()
-//        } catch {
-//            fatalError("error change data")
-//        }
-//
-//    }
-    
-//    // MARK: - remove specified todo from Core Data
-//    public func removeTodo(withIndex index: Int) {
-//        managedObjectContext.delete(todosFromCoreData.value[index])
-//
-//        do {
-//            try managedObjectContext.save()
-//            todosFromCoreData.value = fetchData()
-//        } catch {
-//            fatalError("error delete data")
-//        }
-//    }
 }

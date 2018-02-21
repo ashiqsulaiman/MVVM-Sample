@@ -18,17 +18,18 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     var searchViewModel = SearchViewModel()
     var disposeBag = DisposeBag()
-
+    var tweet: String?
+    var selectedIndex: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tweetListTableView.rowHeight = 100
         populateTweetListTableView()
+        setupDidSelectItemForTweetListTableView()
         searchBar.delegate = self
         
         
     }
-    
     
     // MARK: - perform a binding from observableTweet from ViewModel to tweetListTableView
     private func populateTweetListTableView() {
@@ -41,7 +42,23 @@ class ViewController: UIViewController, UISearchBarDelegate {
             .disposed(by: disposeBag)
     }
     
+    func setupDidSelectItemForTweetListTableView(){
+        tweetListTableView.rx.itemSelected
+            .subscribe(onNext: { indexPath in
+                self.tweetListTableView.deselectRow(at: indexPath, animated: false)
+                self.selectedIndex = indexPath.item
+                self.performSegue(withIdentifier: "userInfoSegue", sender: self)
+            })
+            .disposed(by: disposeBag)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "userInfoSegue" {
+            guard let destinationVC = segue.destination as? UserInfoViewController else { return }
+            destinationVC.index = selectedIndex            
+        }
+    }
+        
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchText = searchBar.text else { return }
         searchViewModel.searchTweet(tweet: searchText)
