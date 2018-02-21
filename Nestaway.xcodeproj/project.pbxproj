@@ -20,6 +20,7 @@
 		5BA00659203C2F62007391F8 /* Tweet + CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA00658203C2F62007391F8 /* Tweet + CoreDataClass.swift */; };
 		5BA0065B203C2F74007391F8 /* Tweet + CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0065A203C2F74007391F8 /* Tweet + CoreDataProperties.swift */; };
 		5BA0065E203C33FE007391F8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0065D203C33FE007391F8 /* Network.swift */; };
+		5BA00664203D6500007391F8 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA00663203D6500007391F8 /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		5BA00658203C2F62007391F8 /* Tweet + CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tweet + CoreDataClass.swift"; sourceTree = "<group>"; };
 		5BA0065A203C2F74007391F8 /* Tweet + CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tweet + CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5BA0065D203C33FE007391F8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5BA00663203D6500007391F8 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		6D20D54A9B189E5BC4F17158 /* Pods-Nestaway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nestaway.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nestaway/Pods-Nestaway.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				5BA00654203C2538007391F8 /* SearchViewModel.swift */,
 				5BA0065C203C2F7D007391F8 /* Model */,
 				5BA0065D203C33FE007391F8 /* Network.swift */,
+				5BA00663203D6500007391F8 /* UserInfoViewController.swift */,
 			);
 			path = Nestaway;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				5BA0063B203B4E6E007391F8 /* AppDelegate.swift in Sources */,
 				5BA0065E203C33FE007391F8 /* Network.swift in Sources */,
 				5BA00643203B4E6E007391F8 /* Nestaway.xcdatamodeld in Sources */,
+				5BA00664203D6500007391F8 /* UserInfoViewController.swift in Sources */,
 				5BA0065B203C2F74007391F8 /* Tweet + CoreDataProperties.swift in Sources */,
 				5BA00653203C2055007391F8 /* TweetListTableViewCell.swift in Sources */,
 			);
