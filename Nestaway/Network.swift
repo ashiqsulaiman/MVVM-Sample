@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import Alamofire
+import SwiftyJSON
 
-enum Network {
+enum NetworkApi {
     case bearerToken
     case limit
     case baseURL
@@ -23,5 +25,22 @@ enum Network {
     
 }
 
+struct Network{
 
+    public func searchTweet(tweet: String, completionHandler:@escaping (Data?) -> ()) {
+        let urlString =  String(describing: NetworkApi.baseURL.stringValue+tweet+NetworkApi.limit.stringValue)
+        let url = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        var request = URLRequest(url: URL(string: url!)!)
+        request.httpMethod = "GET"
+        request.setValue(NetworkApi.bearerToken.stringValue, forHTTPHeaderField: "Authorization")
+        
+        Alamofire.request(request).responseJSON { (response) in
+            guard let data = response.data else {return}
+            completionHandler(data)
+        }
+    }
+
+    
+    
+}
 

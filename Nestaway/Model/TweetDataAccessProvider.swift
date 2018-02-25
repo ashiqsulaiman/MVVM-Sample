@@ -13,7 +13,6 @@ import SwiftyJSON
 
 class TweetDataAccessProvider{
     private var tweetsFromCoreData = Variable<[Tweet]>([])
-    private var userInfo = Variable<[Tweet]>([])
     private var managedObjectContext : NSManagedObjectContext
     
     init() {

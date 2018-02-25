@@ -20,8 +20,6 @@ class UserInfoViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-
-    
     
     let searchViewModel = SearchViewModel()
     let disposeBag = DisposeBag()

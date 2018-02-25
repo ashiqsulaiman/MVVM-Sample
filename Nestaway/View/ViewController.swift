@@ -18,7 +18,6 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     var searchViewModel = SearchViewModel()
     var disposeBag = DisposeBag()
-    var tweet: String?
     var selectedIndex: Int?
     
     override func viewDidLoad() {
@@ -27,17 +26,16 @@ class ViewController: UIViewController, UISearchBarDelegate {
         populateTweetListTableView()
         setupDidSelectItemForTweetListTableView()
         searchBar.delegate = self
-        
-        
+
     }
+    
     
     // MARK: - perform a binding from observableTweet from ViewModel to tweetListTableView
     private func populateTweetListTableView() {
         let observableTweets = searchViewModel.getTweets().asObservable()
         
         observableTweets.bind(to: tweetListTableView.rx.items(cellIdentifier: "tweetCell", cellType: TweetListTableViewCell.self)) { (row, element, cell) in
-            
-            cell.tweetLabel.text = element.tweet
+            cell.updateLabelWith(tweet: element)
             }
             .disposed(by: disposeBag)
     }
@@ -67,6 +65,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
 
 }
+
 
 
 

@@ -16,6 +16,7 @@ struct SearchViewModel {
     private var tweets = Variable<[Tweet]>([])
     private var tweetDataAccessProvider = TweetDataAccessProvider()
     private var disposeBag = DisposeBag()
+    private var network = Network()
     
     init() {
         fetchTweetsAndUpdateObservableTweets()
@@ -28,26 +29,18 @@ struct SearchViewModel {
     // MARK: - fetching Tweets from Core Data and update observable tweets
     private func fetchTweetsAndUpdateObservableTweets() {
         tweetDataAccessProvider.fetchObservableData()
-            .map({ $0 })
             .subscribe(onNext : { (tweet) in
                 self.tweets.value = tweet
             })
             .disposed(by: disposeBag)
     }
     
-    // MARK: -  search and store tweet
-    public func searchTweet(tweet: String) {
-        
-        let urlString =  String(describing: Network.baseURL.stringValue+tweet+Network.limit.stringValue)
-        let url = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        var request = URLRequest(url: URL(string: url!)!)
-        request.httpMethod = "GET"
-        request.setValue(Network.bearerToken.stringValue, forHTTPHeaderField: "Authorization")
-        
-        Alamofire.request(request).responseJSON { (response) in
-            guard let data = response.data else {return}
-            self.tweetDataAccessProvider.addTweet(withTweet: data)
+    public func searchTweet(tweet: String){
+        network.searchTweet(tweet: tweet) { (data) in
+            guard let JSONData = data else { return }
+            self.tweetDataAccessProvider.addTweet(withTweet: JSONData)
         }
     }
+    
 
 }

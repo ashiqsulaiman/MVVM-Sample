@@ -21,5 +21,13 @@ class TweetListTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    func updateLabelWith(tweet: Tweet){
+        tweetLabel.text = tweet.tweet
+    }
+    
+    
+    
 
 }
