@@ -39,8 +39,6 @@ struct Network{
             completionHandler(data)
         }
     }
-
-    
     
 }
 

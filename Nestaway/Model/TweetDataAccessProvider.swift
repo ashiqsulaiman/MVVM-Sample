@@ -61,7 +61,5 @@ class TweetDataAccessProvider{
                 fatalError("error saving data")
             }
         }
-        
-        
     }
 }
