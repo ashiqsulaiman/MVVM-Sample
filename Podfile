@@ -7,7 +7,16 @@ target 'Nestaway' do
 pod 'Alamofire'
 pod 'RxSwift'
 pod 'RxCocoa'
-
+pod 'SwiftyJSON'
   # Pods for Nestaway
+
+
+
+target 'NestawayTests' do
+    pod 'Alamofire'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'SwiftyJSON'
+end
 
 end

@@ -8,16 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		0142C3AB31BB4C9A4CFC4A57 /* Pods_Nestaway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6028FB28F6383C7914144D /* Pods_Nestaway.framework */; };
+		5B19710520416A580068392F /* NestawayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19710420416A580068392F /* NestawayTests.swift */; };
+		5B197113204276D70068392F /* NestawayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B197112204276D70068392F /* NestawayUITests.swift */; };
+		5B19711B2043C7450068392F /* XCUIApplication+SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19711A2043C7450068392F /* XCUIApplication+SearchView.swift */; };
+		5B19711D2043D0F70068392F /* XCUIApplication+UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19711C2043D0F70068392F /* XCUIApplication+UserInfo.swift */; };
 		5BA0063B203B4E6E007391F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0063A203B4E6E007391F8 /* AppDelegate.swift */; };
 		5BA0063D203B4E6E007391F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0063C203B4E6E007391F8 /* ViewController.swift */; };
 		5BA00640203B4E6E007391F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA0063E203B4E6E007391F8 /* Main.storyboard */; };
 		5BA00643203B4E6E007391F8 /* Nestaway.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BA00641203B4E6E007391F8 /* Nestaway.xcdatamodeld */; };
 		5BA00645203B4E6E007391F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA00644203B4E6E007391F8 /* Assets.xcassets */; };
 		5BA00648203B4E6E007391F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA00646203B4E6E007391F8 /* LaunchScreen.storyboard */; };
+		5BA00653203C2055007391F8 /* TweetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA00652203C2055007391F8 /* TweetListTableViewCell.swift */; };
+		5BA00655203C2538007391F8 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA00654203C2538007391F8 /* SearchViewModel.swift */; };
+		5BA00657203C2906007391F8 /* TweetDataAccessProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA00656203C2906007391F8 /* TweetDataAccessProvider.swift */; };
+		5BA00659203C2F62007391F8 /* Tweet + CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA00658203C2F62007391F8 /* Tweet + CoreDataClass.swift */; };
+		5BA0065B203C2F74007391F8 /* Tweet + CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0065A203C2F74007391F8 /* Tweet + CoreDataProperties.swift */; };
+		5BA0065E203C33FE007391F8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0065D203C33FE007391F8 /* Network.swift */; };
+		5BA00664203D6500007391F8 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA00663203D6500007391F8 /* UserInfoViewController.swift */; };
+		9BC65F849E008567AEB8F708 /* Pods_Nestaway_NestawayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB138A70C68B8DF41C9B245A /* Pods_Nestaway_NestawayTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B19710720416A580068392F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BA0062F203B4E6E007391F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA00636203B4E6E007391F8;
+			remoteInfo = Nestaway;
+		};
+		5B197115204276D70068392F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BA0062F203B4E6E007391F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA00636203B4E6E007391F8;
+			remoteInfo = Nestaway;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		10DE48D91F8CB43C6A45E856 /* Pods-Nestaway-NestawayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nestaway-NestawayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nestaway-NestawayTests/Pods-Nestaway-NestawayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C676F3E54F932B2C43E178A /* Pods-Nestaway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nestaway.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nestaway/Pods-Nestaway.debug.xcconfig"; sourceTree = "<group>"; };
+		5B19710220416A580068392F /* NestawayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestawayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B19710420416A580068392F /* NestawayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestawayTests.swift; sourceTree = "<group>"; };
+		5B19710620416A580068392F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B197110204276D70068392F /* NestawayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestawayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B197112204276D70068392F /* NestawayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestawayUITests.swift; sourceTree = "<group>"; };
+		5B197114204276D70068392F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B19711A2043C7450068392F /* XCUIApplication+SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+SearchView.swift"; sourceTree = "<group>"; };
+		5B19711C2043D0F70068392F /* XCUIApplication+UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+UserInfo.swift"; sourceTree = "<group>"; };
 		5B6028FB28F6383C7914144D /* Pods_Nestaway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nestaway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA00637203B4E6E007391F8 /* Nestaway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nestaway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA0063A203B4E6E007391F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,10 +65,34 @@
 		5BA00644203B4E6E007391F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BA00647203B4E6E007391F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BA00649203B4E6E007391F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BA00652203C2055007391F8 /* TweetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetListTableViewCell.swift; sourceTree = "<group>"; };
+		5BA00654203C2538007391F8 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		5BA00656203C2906007391F8 /* TweetDataAccessProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDataAccessProvider.swift; sourceTree = "<group>"; };
+		5BA00658203C2F62007391F8 /* Tweet + CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tweet + CoreDataClass.swift"; sourceTree = "<group>"; };
+		5BA0065A203C2F74007391F8 /* Tweet + CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tweet + CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5BA0065D203C33FE007391F8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5BA00663203D6500007391F8 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		65112A067E0568ABF7905E72 /* Pods-Nestaway-NestawayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nestaway-NestawayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nestaway-NestawayTests/Pods-Nestaway-NestawayTests.release.xcconfig"; sourceTree = "<group>"; };
 		6D20D54A9B189E5BC4F17158 /* Pods-Nestaway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nestaway.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nestaway/Pods-Nestaway.release.xcconfig"; sourceTree = "<group>"; };
+		EB138A70C68B8DF41C9B245A /* Pods_Nestaway_NestawayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nestaway_NestawayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B1970FF20416A580068392F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC65F849E008567AEB8F708 /* Pods_Nestaway_NestawayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B19710D204276D70068392F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BA00634203B4E6E007391F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +104,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B19710320416A580068392F /* NestawayTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B19710420416A580068392F /* NestawayTests.swift */,
+				5B19710620416A580068392F /* Info.plist */,
+			);
+			path = NestawayTests;
+			sourceTree = "<group>";
+		};
+		5B197111204276D70068392F /* NestawayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B197112204276D70068392F /* NestawayUITests.swift */,
+				5B197114204276D70068392F /* Info.plist */,
+				5B19711A2043C7450068392F /* XCUIApplication+SearchView.swift */,
+				5B19711C2043D0F70068392F /* XCUIApplication+UserInfo.swift */,
+			);
+			path = NestawayUITests;
+			sourceTree = "<group>";
+		};
 		5BA0062E203B4E6E007391F8 = {
 			isa = PBXGroup;
 			children = (
 				5BA00639203B4E6E007391F8 /* Nestaway */,
+				5B19710320416A580068392F /* NestawayTests */,
+				5B197111204276D70068392F /* NestawayUITests */,
 				5BA00638203B4E6E007391F8 /* Products */,
 				9B486DC9E92389F3B2B0A856 /* Pods */,
 				AFF8F3793DF262CDD4125F63 /* Frameworks */,
@@ -56,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				5BA00637203B4E6E007391F8 /* Nestaway.app */,
+				5B19710220416A580068392F /* NestawayTests.xctest */,
+				5B197110204276D70068392F /* NestawayUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,14 +150,45 @@
 			isa = PBXGroup;
 			children = (
 				5BA0063A203B4E6E007391F8 /* AppDelegate.swift */,
-				5BA0063C203B4E6E007391F8 /* ViewController.swift */,
+				5BA00667203D89D2007391F8 /* View */,
 				5BA0063E203B4E6E007391F8 /* Main.storyboard */,
 				5BA00644203B4E6E007391F8 /* Assets.xcassets */,
 				5BA00646203B4E6E007391F8 /* LaunchScreen.storyboard */,
 				5BA00649203B4E6E007391F8 /* Info.plist */,
 				5BA00641203B4E6E007391F8 /* Nestaway.xcdatamodeld */,
+				5BA00668203D89ED007391F8 /* ViewModel */,
+				5BA0065C203C2F7D007391F8 /* Model */,
+				5BA0065D203C33FE007391F8 /* Network.swift */,
 			);
 			path = Nestaway;
+			sourceTree = "<group>";
+		};
+		5BA0065C203C2F7D007391F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BA00656203C2906007391F8 /* TweetDataAccessProvider.swift */,
+				5BA00658203C2F62007391F8 /* Tweet + CoreDataClass.swift */,
+				5BA0065A203C2F74007391F8 /* Tweet + CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BA00667203D89D2007391F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BA0063C203B4E6E007391F8 /* ViewController.swift */,
+				5BA00652203C2055007391F8 /* TweetListTableViewCell.swift */,
+				5BA00663203D6500007391F8 /* UserInfoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BA00668203D89ED007391F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BA00654203C2538007391F8 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9B486DC9E92389F3B2B0A856 /* Pods */ = {
@@ -79,6 +196,8 @@
 			children = (
 				1C676F3E54F932B2C43E178A /* Pods-Nestaway.debug.xcconfig */,
 				6D20D54A9B189E5BC4F17158 /* Pods-Nestaway.release.xcconfig */,
+				10DE48D91F8CB43C6A45E856 /* Pods-Nestaway-NestawayTests.debug.xcconfig */,
+				65112A067E0568ABF7905E72 /* Pods-Nestaway-NestawayTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -87,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				5B6028FB28F6383C7914144D /* Pods_Nestaway.framework */,
+				EB138A70C68B8DF41C9B245A /* Pods_Nestaway_NestawayTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,6 +214,45 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B19710120416A580068392F /* NestawayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B19710920416A580068392F /* Build configuration list for PBXNativeTarget "NestawayTests" */;
+			buildPhases = (
+				1ECB905B430C9A760D949933 /* [CP] Check Pods Manifest.lock */,
+				5B1970FE20416A580068392F /* Sources */,
+				5B1970FF20416A580068392F /* Frameworks */,
+				5B19710020416A580068392F /* Resources */,
+				6551D802BF05D06EDBAFA3B9 /* [CP] Embed Pods Frameworks */,
+				0F89D8D97B7D81E3C11FA805 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B19710820416A580068392F /* PBXTargetDependency */,
+			);
+			name = NestawayTests;
+			productName = NestawayTests;
+			productReference = 5B19710220416A580068392F /* NestawayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B19710F204276D70068392F /* NestawayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B197119204276D70068392F /* Build configuration list for PBXNativeTarget "NestawayUITests" */;
+			buildPhases = (
+				5B19710C204276D70068392F /* Sources */,
+				5B19710D204276D70068392F /* Frameworks */,
+				5B19710E204276D70068392F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B197116204276D70068392F /* PBXTargetDependency */,
+			);
+			name = NestawayUITests;
+			productName = NestawayUITests;
+			productReference = 5B197110204276D70068392F /* NestawayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		5BA00636203B4E6E007391F8 /* Nestaway */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BA0064C203B4E6E007391F8 /* Build configuration list for PBXNativeTarget "Nestaway" */;
@@ -124,6 +283,16 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Ashiq Sulaiman";
 				TargetAttributes = {
+					5B19710120416A580068392F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5BA00636203B4E6E007391F8;
+					};
+					5B19710F204276D70068392F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5BA00636203B4E6E007391F8;
+					};
 					5BA00636203B4E6E007391F8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -144,11 +313,27 @@
 			projectRoot = "";
 			targets = (
 				5BA00636203B4E6E007391F8 /* Nestaway */,
+				5B19710120416A580068392F /* NestawayTests */,
+				5B19710F204276D70068392F /* NestawayUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B19710020416A580068392F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B19710E204276D70068392F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BA00635203B4E6E007391F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +347,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F89D8D97B7D81E3C11FA805 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nestaway-NestawayTests/Pods-Nestaway-NestawayTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1ECB905B430C9A760D949933 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nestaway-NestawayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4BD4D702F1A3E064C2FB80B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,16 +408,42 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nestaway/Pods-Nestaway-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6551D802BF05D06EDBAFA3B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nestaway-NestawayTests/Pods-Nestaway-NestawayTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nestaway-NestawayTests/Pods-Nestaway-NestawayTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B2E1667882C07ECB8C52611D /* [CP] Copy Pods Resources */ = {
@@ -220,17 +464,55 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B1970FE20416A580068392F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B19710520416A580068392F /* NestawayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B19710C204276D70068392F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B19711B2043C7450068392F /* XCUIApplication+SearchView.swift in Sources */,
+				5B19711D2043D0F70068392F /* XCUIApplication+UserInfo.swift in Sources */,
+				5B197113204276D70068392F /* NestawayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BA00633203B4E6E007391F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA00659203C2F62007391F8 /* Tweet + CoreDataClass.swift in Sources */,
+				5BA00657203C2906007391F8 /* TweetDataAccessProvider.swift in Sources */,
 				5BA0063D203B4E6E007391F8 /* ViewController.swift in Sources */,
+				5BA00655203C2538007391F8 /* SearchViewModel.swift in Sources */,
 				5BA0063B203B4E6E007391F8 /* AppDelegate.swift in Sources */,
+				5BA0065E203C33FE007391F8 /* Network.swift in Sources */,
 				5BA00643203B4E6E007391F8 /* Nestaway.xcdatamodeld in Sources */,
+				5BA00664203D6500007391F8 /* UserInfoViewController.swift in Sources */,
+				5BA0065B203C2F74007391F8 /* Tweet + CoreDataProperties.swift in Sources */,
+				5BA00653203C2055007391F8 /* TweetListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B19710820416A580068392F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BA00636203B4E6E007391F8 /* Nestaway */;
+			targetProxy = 5B19710720416A580068392F /* PBXContainerItemProxy */;
+		};
+		5B197116204276D70068392F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BA00636203B4E6E007391F8 /* Nestaway */;
+			targetProxy = 5B197115204276D70068392F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5BA0063E203B4E6E007391F8 /* Main.storyboard */ = {
@@ -252,6 +534,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5B19710A20416A580068392F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10DE48D91F8CB43C6A45E856 /* Pods-Nestaway-NestawayTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3JNAB32PR;
+				INFOPLIST_FILE = NestawayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashiq.NestawayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nestaway.app/Nestaway";
+			};
+			name = Debug;
+		};
+		5B19710B20416A580068392F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65112A067E0568ABF7905E72 /* Pods-Nestaway-NestawayTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3JNAB32PR;
+				INFOPLIST_FILE = NestawayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashiq.NestawayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nestaway.app/Nestaway";
+			};
+			name = Release;
+		};
+		5B197117204276D70068392F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3JNAB32PR;
+				INFOPLIST_FILE = NestawayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashiq.NestawayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nestaway;
+			};
+			name = Debug;
+		};
+		5B197118204276D70068392F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3JNAB32PR;
+				INFOPLIST_FILE = NestawayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashiq.NestawayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nestaway;
+			};
+			name = Release;
+		};
 		5BA0064A203B4E6E007391F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -394,6 +740,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B19710920416A580068392F /* Build configuration list for PBXNativeTarget "NestawayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B19710A20416A580068392F /* Debug */,
+				5B19710B20416A580068392F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B197119204276D70068392F /* Build configuration list for PBXNativeTarget "NestawayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B197117204276D70068392F /* Debug */,
+				5B197118204276D70068392F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BA00632203B4E6E007391F8 /* Build configuration list for PBXProject "Nestaway" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B6F9177FF785DDC442C7265033E92576"
-               BuildableName = "Pods_Nestaway.framework"
-               BlueprintName = "Pods-Nestaway"
+               BlueprintIdentifier = "46A7D36B8B70F84488C8BFA8FFFD81DF"
+               BuildableName = "Pods_Nestaway_NestawayTests.framework"
+               BlueprintName = "Pods-Nestaway-NestawayTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B6F9177FF785DDC442C7265033E92576"
-            BuildableName = "Pods_Nestaway.framework"
-            BlueprintName = "Pods-Nestaway"
+            BlueprintIdentifier = "46A7D36B8B70F84488C8BFA8FFFD81DF"
+            BuildableName = "Pods_Nestaway_NestawayTests.framework"
+            BlueprintName = "Pods-Nestaway-NestawayTests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
